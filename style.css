@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(7, 247, 247, 0), rgb(20, 20, 25)), url(https://storage.prompt-hunt.workers.dev/clilr6gpv003fmk0g9ghafarv_3);
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    margin-top: 0px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+nav {
+    padding: 30px 3%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(38, 77, 184);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    height: 140px;
+    width: 120px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.gsbut{
+    margin-left: 70px;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: larger;
+    font-weight:bolder;
+    color: rgb(254, 254, 255);
+    background-color: rgb(44, 47, 121);
+    outline: none;
+    cursor: pointer;
+    border-color:rgb(20, 24, 129);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+.gsbut:hover {
+    background: linear-gradient(147deg,rgb(6, 6,  52) 0%, rgb(9, 29, 59) 74%);
+}
+
+.wrapper.three {
+    background-color: transparent;
+    margin-left: 70px;
+    margin-top: -100px;
+}
+.three h3 {
+    font-family: Bebas Neue;
+    background: url(https://as2.ftcdn.net/v2/jpg/02/40/74/59/1000_F_240745994_ZYbBPZmutbA8OCXiFX52LAwujGYagp05.jpg);
+    font-weight: 900px;
+    font-size: 6rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #91959854;
+    animation: animatedOne 15s linear infinite;
+    margin-top: 00px;
+}
+@keyframes animatedOne {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.vid{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.ifvideo1{
+    width:800px;
+    background-color: white;
+    height:300px;
+    border-radius: 20px;
+}
+
+.text1{
+    font-family: sans-serif;
+    font-size:large;
+    font-weight: bold;
+    margin-left:430px;
+    margin-top: 60px;
+}
+
+.chrispratt{
+    font-family: sans-serif; 
+    font-size: large; 
+    font-weight: bold;
+    color: black;
+    padding: 0px; 
+    margin-top: 15px; 
+    width:50%; 
+    border-radius: 6px;
+    margin-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+}
+
+.chrisprattvid{
+    margin-left:50px;
+    margin-top: -150px;
+}
+
+.mov{
+    margin-left: 190px;
+}
+
+.para1{
+    display: flex;
+    margin-top: 20px;
+    height:40px;
+    width: 100%;
+    background-color: black;
+    color:white;
+    justify-content: center;
+}
+ 
+.para2{
+    display: flex;
+    margin-top: -5px;
+    height:40px;
+    width: 100%;
+    background-color: black;
+    color:white;
+    justify-content: center;
+}
+
+.spaele{
+    background-color: rgb(54, 54, 186);
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+}

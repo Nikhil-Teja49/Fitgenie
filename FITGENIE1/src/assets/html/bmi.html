@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Download Form</title>
+    <link rel="shortcut icon" type="images" href="./logo.jpg">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="tit">
+        FITGENIE
+    </div>
+    <form class="formbmi" method="post" action="download.php">
+        <div class="gender-select">
+            <label style="background-color: #3141ab;border-radius: 7px;" for="gender"> Gender </label>  :
+            <select name="gender" id="gender" class="genderr">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            </select><br><br>
+        </div>
+        
+        <div class="container">
+            <h3 style="color: #ea1659;">Calculate Your BMI :</h3>
+            <div class="row">
+                <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+                <span style="color:#ea1659; font-weight: bold;" id="weight-val">20 kg</span>
+            </div>
+            <div class="row">
+                <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+                <span style="color:#ea1659; font-weight: bold;" id="height-val">100 cm</span>
+            </div>
+    
+            <p id="result">20.0</p>
+            <p style="color: #ea1659; font-weight: bold;" id="category">Normal weight</p>
+        </div>
+
+        <div class="secweight">
+            <label style="background-color: #3141ab;border-radius: 7px;" for="weight"> Category </label> :
+            <select name="weight" id="weight" class="weightl">
+                <option value="underweight" style="height: 20px; background-color: rgb(240, 67, 67);">Underweight</option>
+                <option value="normal" style="background-color: rgb(101, 182, 101);">Normal</option>
+                <option value="overweight" style="background-color: orange;">Overweight</option>
+                <option value="obese" style="background-color: rgb(233, 75, 75);">Obese</option>
+            </select><br><br>
+        </div>
+        <br><br>
+        <div class="secgoal">
+            <label style="background-color: #3141ab;border-radius: 7px;" for="goal"> Goals </label> :
+            <select name="goal" id="goal" class="goall">
+            <option value="muscle-gain" style="background-color: rgb(101, 182, 101);">Muscle Gain</option>
+            <option value="fat-loss" style="background-color: rgb(101, 182, 101);">Fat Loss</option>
+            </select><br><br>
+        </div>
+        
+        <input type="submit" value="Continue" class="button1">
+
+        <script src="bmi.js"></script>
+    </form>
+</body>
+</html>

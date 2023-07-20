@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+.logo{
+    height:100px;
+    width:100px;
+}
+
+.tit {
+    height:80px;
+    width:300px;
+    margin-left: 480px;
+    background-color: transparent;
+    margin-top: 20px;
+    font-family: Bebas Neue;
+    letter-spacing: 3px;
+    background: url('https://i.pinimg.com/originals/e0/cf/c1/e0cfc17dd303fb144844b19dab47e795.jpg');
+    font-weight:bolder;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #91959854;
+    animation: animatedOne 30s linear infinite;
+}
+@keyframes animatedOne {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}

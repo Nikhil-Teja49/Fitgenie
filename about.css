@@ -1,0 +1,24 @@
+.b1{
+    background-image: url('https://jbsoftware.ca/wp-content/uploads/web-design.jpg');
+    background-size: cover;
+    color: rgb(198, 124, 124);
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.t1,.s1{
+    color: rgb(72, 117, 117);
+    background-color:white;
+    margin-right: 1000px;
+    border-radius: 20px;
+    padding-bottom: 0px;
+    opacity : 0.8;
+}
+
+.f1{
+    color: rgb(72, 117, 117);
+    background-color:white;
+    border-radius: 20px;
+    padding-bottom: 0px;
+    opacity : 0.8;
+}
